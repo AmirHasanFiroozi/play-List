@@ -44,7 +44,7 @@ const musicPlayMode = [
 //random video in background
 function randomVideo(){
   let randomNumber = Math.floor(Math.random() * 5) + 1;
-  backgroundVideo.setAttribute("src", `../public/videos/video${randomNumber}.mp4`);
+  backgroundVideo.setAttribute("src", `./public/videos/video${randomNumber}.mp4`);
   backgroundVideo.muted = true;
   backgroundVideo.play();
 }
