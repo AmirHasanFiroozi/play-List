@@ -27,13 +27,13 @@ let stateFlag = false ;
 //music data
 let Index = 0 ;
 const musics = [
-    { id : 0 , musicName  : "Super Gremlin", singerName : "Kodak Black" , imageAddress : "musics/image/image1.jpg" , musicAddress : "musics/music/music1.mp3"},
-    { id : 1 , musicName  : "POPSTAR", singerName : "Dj Khaled" , imageAddress : "musics/image/image2.jpg" , musicAddress : "musics/music/music2.mp3" },
-    { id : 2 , musicName  : "Higher", singerName : "Eminem" , imageAddress : "musics/image/image3.jpg" , musicAddress : "musics/music/music3.mp3" },
-    { id : 3 , musicName  : "NDA", singerName : "Billie Eilish" , imageAddress : "musics/image/image4.jpg" , musicAddress : "musics/music/music4.mp3" },
-    { id : 4 , musicName  : "I See Red", singerName : "Everybody Loves an Outlaw" , imageAddress : "musics/image/image5.jpg" , musicAddress : "musics/music/music5.mp3" },
-    { id : 5 , musicName  : "Hey Boy", singerName : "Sia" , imageAddress : "musics/image/image6.jpg" , musicAddress : "musics/music/music6.mp3" },
-    { id : 6 , musicName  : "Godzilla", singerName : "Eminem" , imageAddress : "musics/image/image7.jpg" , musicAddress : "musics/music/music7.mp3" }
+    { id : 0 , musicName  : "Super Gremlin", singerName : "Kodak Black" , imageAddress : "./public/musics/image/image1.jpg" , musicAddress : "./public/musics/music/music1.mp3"},
+    { id : 1 , musicName  : "POPSTAR", singerName : "Dj Khaled" , imageAddress : "./public/musics/image/image2.jpg" , musicAddress : "./public/musics/music/music2.mp3" },
+    { id : 2 , musicName  : "Higher", singerName : "Eminem" , imageAddress : "./public/musics/image/image3.jpg" , musicAddress : "./public/musics/music/music3.mp3" },
+    { id : 3 , musicName  : "NDA", singerName : "Billie Eilish" , imageAddress : "./public/musics/image/image4.jpg" , musicAddress : "./public/musics/music/music4.mp3" },
+    { id : 4 , musicName  : "I See Red", singerName : "Everybody Loves an Outlaw" , imageAddress : "./public/musics/image/image5.jpg" , musicAddress : "./public/musics/music/music5.mp3" },
+    { id : 5 , musicName  : "Hey Boy", singerName : "Sia" , imageAddress : "./public/musics/image/image6.jpg" , musicAddress : "./public/musics/music/music6.mp3" },
+    { id : 6 , musicName  : "Godzilla", singerName : "Eminem" , imageAddress : "./public/musics/image/image7.jpg" , musicAddress : "./public/musics/music/music7.mp3" }
 ];
 //music play mode
 const musicPlayMode = [
@@ -44,7 +44,7 @@ const musicPlayMode = [
 //random video in background
 function randomVideo(){
   let randomNumber = Math.floor(Math.random() * 5) + 1;
-  backgroundVideo.setAttribute("src", `./videos/video${randomNumber}.mp4`);
+  backgroundVideo.setAttribute("src", `../public/videos/video${randomNumber}.mp4`);
   backgroundVideo.muted = true;
   backgroundVideo.play();
 }
